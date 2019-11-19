@@ -7,9 +7,9 @@ matter. Also we should check whether cell already taken without creation
 of object - simply with tuple of x and y coordinates.  
 Please implement classes Grass, Stone, Water to pass all assertions.  
 """  
-` 
-if name == '__main__':
-    world = {Grass(1, 2), Stone(3, 4), Water(5, 3), Stone(2, 2)}
+
+`if name == '__main__':
+    world = {Grass(1, 2), Stone(3, 4), Water(5, 3), Stone(2, 2)}`
 
     assert Stone(1, 2) in world
     assert Grass(3, 5) not in world
