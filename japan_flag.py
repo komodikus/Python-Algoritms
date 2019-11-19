@@ -4,7 +4,7 @@ def generate_japan_flag(n):
     for i in range(n // 2):
         canvas.append("#" + ''.rjust(3 * n, "-") + "#")
     for i in range(n // 2):
-        canvas.append("#" + f'*{"o" * i}{"o" * i}*'.center(3 * n, "-") + "#")
+        canvas.append("#" + f'*{"o" * i*2}*'.center(3 * n, "-") + "#")
     return "\n".join(canvas + canvas[::-1])
 
 
