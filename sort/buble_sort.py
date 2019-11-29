@@ -3,14 +3,16 @@ import random
 my_list = [random.randint(1, 100) for i in range(10)]
 
 
-def buble_sort(my_list):
-    for i in range(len(my_list)):
-        for in_element in range(1, len(my_list)):
-            if my_list[in_element] < my_list[in_element - 1]:
-                my_list[in_element], my_list[in_element - 1] = my_list[in_element - 1], my_list[in_element]
-    return my_list
+def bubble_sort(array: list) -> list:
+    len_array_minus_one = len(array) - 1
+    for i in range(len_array_minus_one):
+        for j in range(len_array_minus_one - i):
+            if array[j] > array[j + 1]:
+                array[j], array[j + 1] = array[j + 1], array[j]
+    return array
+
 
 
 if __name__ == "__main__":
     print(my_list)
-    print(buble_sort(my_list))
+    print(bubble_sort(my_list))
