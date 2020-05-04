@@ -4,11 +4,11 @@ alpha = string.ascii_lowercase
 
 
 def draw_ragnoli(height):
-    L = []
+    result = []
     for i in range(height):
         line = "-".join(alpha[i:height])
-        L.append((line[::-1] + line[1:]).center(4 * height - 3, "-"))
-    print("\n".join(L[::-1] + L))
+        result.append((line[::-1] + line[1:]).center(4 * height - 3, "-"))
+    print("\n".join(result[::-1] + result))
 
 
 if __name__ == '__main__':
